@@ -1,3 +1,44 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" content-id="main"> 
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="goal">
+          <ion-icon name="goal" slot="Start">
+          </ion-icon>
+          <ion-label>Goal</ion-label>
+        </ion-item>
+        <ion-item routerLink="personas">
+          <ion-icon name="personas" slot="Start">
+          </ion-icon>
+          <ion-label>Personas</ion-label>
+        </ion-item>
+        <ion-item routerLink="skecthes">
+          <ion-icon name="sketches" slot="Start">
+          </ion-icon>
+          <ion-label>Sketches</ion-label>
+        </ion-item>
+        <ion-item routerLink="critique">
+          <ion-icon name="critique" slot="Start">
+          </ion-icon>
+          <ion-label>Critique</ion-label>
+        </ion-item>
+        <ion-item routerLink="tecnologies">
+          <ion-icon name="technologies" slot="Start">
+          </ion-icon>
+          <ion-label>Technologies</ion-label>
+        </ion-item>
+        <ion-item routerLink="profile">
+          <ion-icon name="profile" slot="Start">
+          </ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
